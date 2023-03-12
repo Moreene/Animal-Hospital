@@ -1,0 +1,25 @@
+//footer樣式
+.footer {
+    background-color: $info;
+
+    i{
+        color: $yellow-200;
+    }
+
+    a {
+        color: $white;
+
+        &:hover {
+            color: $yellow-100;
+        }
+
+        &:active{
+            color: $yellow-200;
+        }
+    }
+}
+
+//版權樣式
+.copyRight {
+    background-color: $cyan-600;
+}

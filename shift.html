@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星光動物醫院</title>
+    <link rel="icon" href="./logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex flex-row align-items-center py-3 py-lg-0" href="./index.html">
+                <img src="./image/logo.png" alt="星星" class="img-fluid me-2" style="width: 20px;">
+                星光動物醫院
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link py-3 text-center" href="./index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center py-3" href="./veterinarian.html">星光團隊</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center py-3 active" href="./shift.html">星光班表</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center py-3" href="./article.html">衛教文章</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center py-3" href="./reverse.html">線上預約</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- banner -->
+    <div class="shift-banner w-100 bg-repeat-no bg-size-cover"
+        style="background-image: url(https://images.unsplash.com/photo-1435527173128-983b87201f4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1467&q=80);">
+    </div>
+
+    <!-- shift -->
+    <div class="bg-white">
+        <div class="container py-5">
+            <div class="col-10 mx-auto">
+                <div class="text-center mb-4">
+                    <h2 class="mb-5">
+                        <i class="bi bi-stars star-icon"></i>
+                        <span class="star-title">星光班表</span>
+                        <i class="bi bi-stars star-icon"></i>
+                    </h2>
+                    <div class="d-flex align-items-center justify-content-center" data-aos="fade-up"
+                        data-aos-duration="1000">
+                        <button class="btn btn-link p-0 border-0 me-2">
+                            <i class="bi bi-caret-left fs-4 arror-icon"></i>
+                        </button>
+                        <h3 class="d-inline fs-4 mb-0">2023 / 3月</h3>
+                        <button class="btn btn-link p-0 border-0 ms-2">
+                            <i class="bi bi-caret-right fs-4 arror-icon"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="table-responsive mb-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1500">
+                    <table class="table table-bordered text-center text-nowrap overflow-auto">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="table-info">星期日</th>
+                                <th scope="col" class="table-info">星期一</th>
+                                <th scope="col" class="table-info">星期二</th>
+                                <th scope="col" class="table-info">星期三</th>
+                                <th scope="col" class="table-info">星期四</th>
+                                <th scope="col" class="table-info">星期五</th>
+                                <th scope="col" class="table-info">星期六</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"></th>
+                                <td></td>
+                                <td></td>
+                                <td class="table-secondary">1</td>
+                                <td class="table-secondary">2</td>
+                                <td class="table-secondary">3</td>
+                                <td class="table-secondary">4</td>
+                            </tr>
+                            <tr>
+                                <td scope="row"></td>
+                                <td></td>
+                                <td></td>
+                                <td>Dr.WU<br>
+                                    Dr.HO<br>
+                                    Dr.PAN
+                                </td>
+                                <td>Dr.HO<br>
+                                    Dr.PAN<br>
+                                    Dr.YANG
+                                </td>
+                                <td>Dr.MO<br>
+                                    Dr.LIN<br>
+                                    Dr.SUN
+                                </td>
+                                <td>Dr.SUN<br>
+                                    Dr.YANG<br>
+                                    Dr.CHEN
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="table-secondary">5</td>
+                                <td class="table-secondary">6</td>
+                                <td class="table-secondary">7</td>
+                                <td class="table-secondary">8</td>
+                                <td class="table-secondary">9</td>
+                                <td class="table-secondary">10</td>
+                                <td class="table-secondary">11</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">
+                                    Dr.WU<br>
+                                    Dr.MO<br>
+                                    Dr.CHEN
+                                </td>
+                                <td>Dr.PAN<br>
+                                    Dr.LIN<br>
+                                    Dr.SUN
+                                </td>
+                                <td>Dr.HO<br>
+                                    Dr.MO<br>
+                                    Dr.YANG
+                                </td>
+                                <td>Dr.WU<br>
+                                    Dr.LIN<br>
+                                    Dr.CHEN
+                                </td>
+                                <td>Dr.PAN<br>
+                                    Dr.LIN<br>
+                                    Dr.SUN
+                                </td>
+                                <td>Dr.WU<br>
+                                    Dr.CHEN<br>
+                                    Dr.YANG
+                                </td>
+                                <td>Dr.HO<br>
+                                    Dr.MO<br>
+                                    Dr.LIN
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="table-secondary">12</td>
+                                <td class="table-secondary">13</td>
+                                <td class="table-secondary">14</td>
+                                <td class="table-secondary">15</td>
+                                <td class="table-secondary">16</td>
+                                <td class="table-secondary">17</td>
+                                <td class="table-secondary">18</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">
+                                    Dr.HO<br>
+                                    Dr.MO<br>
+                                    Dr.YANG
+                                </td>
+                                <td>Dr.WU<br>
+                                    Dr.SUN<br>
+                                    Dr.YANG
+                                </td>
+                                <td>Dr.PAN<br>
+                                    Dr.LIN<br>
+                                    Dr.CHEN
+                                </td>
+                                <td>Dr.WU<br>
+                                    Dr.MO<br>
+                                    Dr.PAN
+                                </td>
+                                <td>Dr.HO<br>
+                                    Dr.SUN<br>
+                                    Dr.YANG
+                                </td>
+                                <td>Dr.WU<br>
+                                    Dr.LIN<br>
+                                    Dr.CHEN
+                                </td>
+                                <td>Dr.HO<br>
+                                    Dr.SUN<br>
+                                    Dr.YANG
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="table-secondary">19</td>
+                                <td class="table-secondary">20</td>
+                                <td class="table-secondary">21</td>
+                                <td class="table-secondary">22</td>
+                                <td class="table-secondary">23</td>
+                                <td class="table-secondary">24</td>
+                                <td class="table-secondary">25</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">
+                                    Dr.MO<br>
+                                    Dr.PAN<br>
+                                    Dr.LIN
+                                </td>
+                                <td>Dr.WU<br>
+                                    Dr.MO<br>
+                                    Dr.YANG
+                                </td>
+                                <td>Dr.HO<br>
+                                    Dr.SUN<br>
+                                    Dr.PAN
+                                </td>
+                                <td>Dr.WU<br>
+                                    Dr.LIN<br>
+                                    Dr.CHEN
+                                </td>
+                                <td>Dr.HO<br>
+                                    Dr.MO<br>
+                                    Dr.SUN
+                                </td>
+                                <td>Dr.PANG<br>
+                                    Dr.YANG<br>
+                                    Dr.CHEN
+                                </td>
+                                <td>Dr.WU<br>
+                                    Dr.SUN<br>
+                                    Dr.PAN
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="table-secondary">26</td>
+                                <td class="table-secondary">27</td>
+                                <td class="table-secondary">28</td>
+                                <td class="table-secondary">29</td>
+                                <td class="table-secondary">30</td>
+                                <td class="table-secondary">31</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">
+                                    Dr.HO<br>
+                                    Dr.MO<br>
+                                    Dr.LIN
+                                </td>
+                                <td>Dr.WU<br>
+                                    Dr.YANG<br>
+                                    Dr.CHEN
+                                </td>
+                                <td>Dr.SUN<br>
+                                    Dr.LIN<br>
+                                    Dr.PAN
+                                </td>
+                                <td>Dr.HO<br>
+                                    Dr.YANG<br>
+                                    Dr.CHEN
+                                </td>
+                                <td>Dr.MO<br>
+                                    Dr.WU<br>
+                                    Dr.PAN
+                                </td>
+                                <td>Dr.HO<br>
+                                    Dr.LIN<br>
+                                    Dr.PAN
+                                </td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div data-aos="flip-left" data-aos-duration="1500">
+                    <h3 class="fs-5">【注意事項】</h3>
+                    <p class="mb-1 d-flex"><i class="bi bi-stars me-1 star-icon"></i>週一～週日皆有看診（限狗貓）</p>
+                    <p class="mb-1 d-flex"><i
+                            class="bi bi-stars me-1 star-icon"></i><span>本院採預約制，門診預約，請於”一般門診時段”來電預約，或是填寫<a
+                                href="./reverse.html" class="d-inline link-info">線上預約單</a></span>
+                    </p>
+                    <p class="mb-1 d-flex"><i class="bi bi-stars me-1 star-icon"></i>如無法赴約門診，請務必事先來電告知！</p>
+                    <p class="mb-0 d-flex"><i class="bi bi-stars me-1 star-icon"></i>若超過三次無法赴約卻未事先來電取消，將暫停該病患1個月的看診資格！
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container pt-3">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 px-2 px-md-0">
+                <div class="col">
+                    <div class="d-flex justify-content-lg-center">
+                        <img src="./image/hospital.png" alt="動物醫院" class="img-fluid mt-1" style="height: 160px;">
+                    </div>
+                </div>
+                <div class="col">
+                    <ul class="ps-0 mb-0 d-flex flex-column ps-lg-5">
+                        <li>
+                            <h2 class="fs-5 py-1 mb-0 text-white">星光動物醫院</h2>
+                        </li>
+                        <li>
+                            <a href="./reverse.html" class="py-1">預約式看診</a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-1">最新消息</a>
+                        </li>
+                        <li>
+                            <a href="./shift.html" class="py-1">醫師班表</a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-1">加入我們</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="ps-0 mb-0 d-flex flex-column">
+                        <li>
+                            <h2 class="fs-5 py-1 mb-0 text-white">聯絡資料</h2>
+                        </li>
+                        <li>
+                            <a href="#" class="py-1">
+                                <i class="bi bi-geo-alt-fill"></i> 新北市八里區星光街100號
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-1">
+                                <i class="bi bi-telephone"></i> (02)2618-0000
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="ps-0 mb-0 d-flex flex-column">
+                        <li>
+                            <h2 class="fs-5 py-1 mb-0 text-white">服務時間</h2>
+                        </li>
+                        <li>
+                            <p class="text-white">週一 ~ 週六<br>
+                                10：00 - 13：00，<br>
+                                14：00 - 17：00，<br>
+                                18：00 - 21：00<br>
+                                21：00 - 02:00 ( 僅急診服務 )<br><br>
+                                週日<br>
+                                10：00 - 17：00<br>
+                                17：00 - 22：00 ( 僅急診服務 )
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row m-0 copyRight">
+            <div class="col">
+                <p class="mb-0 py-3 text-center text-white">© 2023 Copyright - 星光動物醫院</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

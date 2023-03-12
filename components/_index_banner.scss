@@ -1,0 +1,28 @@
+//banner樣式
+.banner {
+    height: 450px;
+
+    h1 {
+        font-size: 25px;
+    }
+}
+
+@media (min-width:768px) {
+    .banner {
+        height: 600px;
+
+        h1{
+            font-size:36px;
+        }
+    }
+}
+
+@media (min-width:992px) {
+    .banner {
+        height: 720px;
+
+        h1{
+            font-size: 3rem;
+        }
+    }
+}

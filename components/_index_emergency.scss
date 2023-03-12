@@ -1,0 +1,35 @@
+//背景樣式
+.emergency {
+    background-color: $gray-200;
+}
+
+.emergency .container {
+    max-width: 800px;
+}
+
+
+//標題樣式
+.emergency-service {
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 40%;
+        height: 3px;
+        background-color: $info;
+        position: absolute;
+        left: -50%;
+        top: 50%;
+    }
+
+
+    &::after {
+        content: '';
+        width: 40%;
+        height: 3px;
+        background-color: $info;
+        position: absolute;
+        right: -50%;
+        top: 50%;
+    }
+}

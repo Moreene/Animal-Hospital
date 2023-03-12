@@ -1,0 +1,30 @@
+//標題樣式
+.medical{
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 40%;
+        height: 3px;
+        background-color: $info;
+        position: absolute;
+        left: -50%;
+        top: 50%;
+    }
+
+
+    &::after {
+        content: '';
+        width: 40%;
+        height: 3px;
+        background-color: $info;
+        position: absolute;
+        right: -50%;
+        top: 50%;
+    }
+}
+
+//icon樣式
+.medical-item i{
+    color: $info;
+}

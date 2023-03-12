@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星光動物醫院</title>
+    <link rel="icon" href="./logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex flex-row align-items-center py-3 py-lg-0" href="./index.html">
+                <img src="./image/logo.png" alt="星星" class="img-fluid me-2" style="width: 20px;">
+                星光動物醫院
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link py-3 text-center" href="./index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center py-3" href="./veterinarian.html">星光團隊</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center py-3" href="./shift.html">星光班表</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center py-3" href="./article.html">衛教文章</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center py-3 active" href="./reverse.html">線上預約</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 線上預約 -->
+    <div style="background-image: url(./image/star-yellow.jpg);">
+        <div class="container py-5">
+            <div class="row justify-content-center pb-5">
+                <div class="col-10 col-lg-8">
+                    <form class="needs-validation" novalidate>
+                        <div class="text-center mb-4">
+                            <h2 class="mb-5">
+                                <i class="bi bi-stars star-icon"></i>
+                                <span class="star-title">星光預約</span>
+                                <i class="bi bi-stars star-icon"></i>
+                            </h2>
+                            <p class="text-secondary mb-0" data-aos="fade-up" data-aos-duration="1500">初診者或複診者皆可以線上預約！</p>
+                        </div>
+
+                        <div class="row shadow-md-sm py-4 px-2 px-md-5 bg-white">
+                            <div class="col-12">
+                                <h3 class="h4 mb-4 d-inline-block info-title">主人資訊</h3>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="lastName" class="form-label">姓氏</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                                <div class="invalid-feedback">
+                                    請填寫姓氏!
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="firstName" class="form-label">名字</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                                <div class="invalid-feedback">
+                                    請填寫名字!
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="call" class="form-label">稱呼</label>
+                                <select id="call" class="form-select">
+                                    <option selected disabled value="">先生 / 小姐</option>
+                                    <option>先生</option>
+                                    <option>小姐</option>
+                                </select>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label for="phoneNumber" class="form-label">手機號碼</label>
+                                <input type="tel" class="form-control" id="phoneNumber" required>
+                                <div class="invalid-feedback">
+                                    請填寫手機號碼，以利聯絡!
+                                </div>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label for="email" class="form-label">電子信箱</label>
+                                <input type="email" class="form-control" id="email" required>
+                                <div class="invalid-feedback">
+                                    請填寫信箱，看診後的收據將採取電子寄發!
+                                </div>
+                            </div>
+                            <div class="col-12 mb-5">
+                                <label for="address" class="form-label">住址</label>
+                                <input type="text" class="form-control" id="address" required>
+                                <div class="invalid-feedback">
+                                    請填寫住址!
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h3 class="h4 mb-4 d-inline-block info-title">寵物資訊</h3>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="petName" class="form-label">寵物姓名</label>
+                                <input type="text" class="form-control" id="petName" required>
+                                <div class="invalid-feedback">
+                                    請填寵物姓名!
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="species" class="form-label">狗 / 貓</label>
+                                <select id="species" class="form-select" required>
+                                    <option selected disabled value="">請選擇</option>
+                                    <option>狗狗</option>
+                                    <option>貓咪</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    請填寵物為狗狗或貓咪!
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="petAge" class="form-label">年紀(歲)</label>
+                                <input type="number" class="form-control" id="petAge" min="0" max="25" required>
+                                <div class="invalid-feedback">
+                                    請填寫寵物的歲數!
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="petGender" class="form-label">性別</label>
+                                <select id="petGender" class="form-select" required>
+                                    <option selected disabled value="">請選擇</option>
+                                    <option>公</option>
+                                    <option>母</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    請選擇寵物的性別!
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="petWeight" class="form-label">體重(公斤)</label>
+                                <input type="number" class="form-control" id="petWeight" required>
+                                <div class="invalid-feedback">
+                                    請填寫寵物的公斤數!
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="petDepartment" class="form-label">欲預約診別</label>
+                                <select id="petDepartment" class="form-select" required>
+                                    <option selected disabled value="">請選擇</option>
+                                    <option>心臟科</option>
+                                    <option>眼科</option>
+                                    <option>齒科</option>
+                                    <option>腫瘤科</option>
+                                    <option>神經科</option>
+                                    <option>內科</option>
+                                    <option>中醫科</option>
+                                    <option>復健科</option>
+                                    <option>其他</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    請選擇欲看診科別，一張預約單只能選一診!
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="date" class="form-label">欲預約日期</label>
+                                <input type="date" id="date" name="trip-start" min="2023-03-01" max="2023-04-30"
+                                    class="form-control" required>
+                                <div class="invalid-feedback">
+                                    請選擇欲看診日期，最多可以往後預約一個月!
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="illnessDescribe" class="form-label">疾病詳細描述</label><br>
+                                <textarea name="mytext" rows="6" class="form-control" id="illnessDescribe"
+                                    placeholder="毛孩於幾年幾月幾號發生什麼樣的問題、症狀、持續時間、先前是否針對該問題就診過...等" required></textarea>
+                                <div class="invalid-feedback">
+                                    請詳細描述寵物的症狀，以利醫師事先評估!
+                                </div>
+                            </div>
+                            <div class="col-12 mt-5 mb-3">
+                                <div class="d-flex justify-content-center">
+                                    <button type="submit" class="btn btn-dark w-50 w-sm-25" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop">送出</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    請確認表單是否填寫完整，並再次送出!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success btn-sm px-3">送出</button>
+                    <button type="button" class="btn btn-secondary btn-sm px-3" data-bs-dismiss="modal">關閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container pt-3">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 px-2 px-md-0">
+                <div class="col">
+                    <div class="d-flex justify-content-lg-center">
+                        <img src="./image/hospital.png" alt="動物醫院" class="img-fluid mt-1" style="height: 160px;">
+                    </div>
+                </div>
+                <div class="col">
+                    <ul class="ps-0 mb-0 d-flex flex-column ps-lg-5">
+                        <li>
+                            <h2 class="fs-5 py-1 mb-0 text-white">星光動物醫院</h2>
+                        </li>
+                        <li>
+                            <a href="./reverse.html" class="py-1">預約式看診</a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-1">最新消息</a>
+                        </li>
+                        <li>
+                            <a href="./shift.html" class="py-1">醫師班表</a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-1">加入我們</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="ps-0 mb-0 d-flex flex-column">
+                        <li>
+                            <h2 class="fs-5 py-1 mb-0 text-white">聯絡資料</h2>
+                        </li>
+                        <li>
+                            <a href="#" class="py-1">
+                                <i class="bi bi-geo-alt-fill"></i> 新北市八里區星光街100號
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-1">
+                                <i class="bi bi-telephone"></i> (02)2618-0000
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="ps-0 mb-0 d-flex flex-column">
+                        <li>
+                            <h2 class="fs-5 py-1 mb-0 text-white">服務時間</h2>
+                        </li>
+                        <li>
+                            <p class="text-white">週一 ~ 週六<br>
+                                10：00 - 13：00，<br>
+                                14：00 - 17：00，<br>
+                                18：00 - 21：00<br>
+                                21：00 - 02:00 ( 僅急診服務 )<br><br>
+                                週日<br>
+                                10：00 - 17：00<br>
+                                17：00 - 22：00 ( 僅急診服務 )
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row m-0 copyRight">
+            <div class="col">
+                <p class="mb-0 py-3 text-center text-white">© 2023 Copyright - 星光動物醫院</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+
+        var myModalEl = document.getElementById('myModal')
+        myModalEl.addEventListener('hidden.bs.modal', function (event) {
+            // do something...
+        })
+    </script>
+     <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

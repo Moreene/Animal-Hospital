@@ -1,0 +1,20 @@
+//banner樣式
+.shift-banner {
+    height: 360px;
+    background-position: 50% 40%;
+}
+
+@media (min-width:992px) {
+    .shift-banner {
+        height: 450px;
+    }
+}
+
+//icon樣式
+.arror-icon {
+    color: $info;
+}
+
+.star-icon {
+    color: $yellow-300;
+}
