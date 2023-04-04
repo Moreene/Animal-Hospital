@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>星光動物醫院</title>
+    <title>星光班表 | 星光動物醫院</title>
     <link rel="icon" href="./logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="./all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,8 +16,8 @@
 
 <body>
 
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <!-- header -->
+    <header class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand d-flex flex-row align-items-center py-3 py-lg-0" href="./index.html">
                 <img src="./image/logo.png" alt="星星" class="img-fluid me-2" style="width: 20px;">
@@ -48,7 +48,7 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </header>
 
     <!-- banner -->
     <div class="shift-banner w-100 bg-repeat-no bg-size-cover"
@@ -56,7 +56,7 @@
     </div>
 
     <!-- shift -->
-    <div class="bg-white">
+    <main class="bg-white">
         <div class="container py-5">
             <div class="col-10 mx-auto">
                 <div class="text-center mb-4">
@@ -65,45 +65,44 @@
                         <span class="star-title">星光班表</span>
                         <i class="bi bi-stars star-icon"></i>
                     </h2>
-                    <div class="d-flex align-items-center justify-content-center" data-aos="fade-up"
-                        data-aos-duration="1000">
+                    <div class="d-flex align-items-center justify-content-center">
                         <button class="btn btn-link p-0 border-0 me-2">
                             <i class="bi bi-caret-left fs-4 arror-icon"></i>
                         </button>
-                        <h3 class="d-inline fs-4 mb-0">2023 / 3月</h3>
+                        <h3 class="d-inline fs-4 mb-0">2023 / 4月</h3>
                         <button class="btn btn-link p-0 border-0 ms-2">
                             <i class="bi bi-caret-right fs-4 arror-icon"></i>
                         </button>
                     </div>
                 </div>
 
-                <div class="table-responsive mb-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1500">
-                    <table class="table table-bordered text-center text-nowrap overflow-auto">
+                <div class="table-responsive mb-5">
+                    <table class="table table-bordered text-center align-middle text-nowrap overflow-auto">
                         <thead>
                             <tr>
-                                <th scope="col" class="table-info">星期日</th>
+                                <th scope="col" class="table-info">時間</th>
                                 <th scope="col" class="table-info">星期一</th>
                                 <th scope="col" class="table-info">星期二</th>
                                 <th scope="col" class="table-info">星期三</th>
                                 <th scope="col" class="table-info">星期四</th>
                                 <th scope="col" class="table-info">星期五</th>
                                 <th scope="col" class="table-info">星期六</th>
+                                <th scope="col" class="table-info">星期日</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row"></th>
-                                <td></td>
-                                <td></td>
-                                <td class="table-secondary">1</td>
-                                <td class="table-secondary">2</td>
-                                <td class="table-secondary">3</td>
-                                <td class="table-secondary">4</td>
-                            </tr>
-                            <tr>
-                                <td scope="row"></td>
-                                <td></td>
-                                <td></td>
+                                <th scope="row" class="table-warning">上午</span>
+                                </th>
+                                <td>
+                                    Dr.HO<br>
+                                    Dr.MO<br>
+                                    Dr.YANG
+                                </td>
+                                <td>Dr.WU<br>
+                                    Dr.MO<br>
+                                    Dr.PAN
+                                </td>
                                 <td>Dr.WU<br>
                                     Dr.HO<br>
                                     Dr.PAN
@@ -120,18 +119,15 @@
                                     Dr.YANG<br>
                                     Dr.CHEN
                                 </td>
+                                <td>
+                                    Dr.HO<br>
+                                    Dr.MO<br>
+                                    Dr.YANG
+                                </td>
                             </tr>
                             <tr>
-                                <td scope="row" class="table-secondary">5</td>
-                                <td class="table-secondary">6</td>
-                                <td class="table-secondary">7</td>
-                                <td class="table-secondary">8</td>
-                                <td class="table-secondary">9</td>
-                                <td class="table-secondary">10</td>
-                                <td class="table-secondary">11</td>
-                            </tr>
-                            <tr>
-                                <td scope="row">
+                                <th scope="row" class="table-warning">下午</th>
+                                <td>
                                     Dr.WU<br>
                                     Dr.MO<br>
                                     Dr.CHEN
@@ -162,16 +158,8 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td scope="row" class="table-secondary">12</td>
-                                <td class="table-secondary">13</td>
-                                <td class="table-secondary">14</td>
-                                <td class="table-secondary">15</td>
-                                <td class="table-secondary">16</td>
-                                <td class="table-secondary">17</td>
-                                <td class="table-secondary">18</td>
-                            </tr>
-                            <tr>
-                                <td scope="row">
+                                <th scope="row" class="table-warning">晚上</th>
+                                <td>
                                     Dr.HO<br>
                                     Dr.MO<br>
                                     Dr.YANG
@@ -202,56 +190,33 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td scope="row" class="table-secondary">19</td>
-                                <td class="table-secondary">20</td>
-                                <td class="table-secondary">21</td>
-                                <td class="table-secondary">22</td>
-                                <td class="table-secondary">23</td>
-                                <td class="table-secondary">24</td>
-                                <td class="table-secondary">25</td>
-                            </tr>
-                            <tr>
-                                <td scope="row">
+                                <th scope="row" class="table-danger">急診</th>
+                                <td>
                                     Dr.MO<br>
                                     Dr.PAN<br>
-                                    Dr.LIN
                                 </td>
                                 <td>Dr.WU<br>
                                     Dr.MO<br>
-                                    Dr.YANG
                                 </td>
                                 <td>Dr.HO<br>
                                     Dr.SUN<br>
-                                    Dr.PAN
                                 </td>
                                 <td>Dr.WU<br>
                                     Dr.LIN<br>
-                                    Dr.CHEN
                                 </td>
                                 <td>Dr.HO<br>
-                                    Dr.MO<br>
                                     Dr.SUN
                                 </td>
-                                <td>Dr.PANG<br>
-                                    Dr.YANG<br>
+                                <td>Dr.YANG<br>
                                     Dr.CHEN
                                 </td>
                                 <td>Dr.WU<br>
-                                    Dr.SUN<br>
                                     Dr.PAN
                                 </td>
                             </tr>
-                            <tr>
-                                <td scope="row" class="table-secondary">26</td>
-                                <td class="table-secondary">27</td>
-                                <td class="table-secondary">28</td>
-                                <td class="table-secondary">29</td>
-                                <td class="table-secondary">30</td>
-                                <td class="table-secondary">31</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td scope="row">
+                            <!-- <tr>
+                                <th scope="row">上午</th>
+                                <td>
                                     Dr.HO<br>
                                     Dr.MO<br>
                                     Dr.LIN
@@ -276,13 +241,16 @@
                                     Dr.LIN<br>
                                     Dr.PAN
                                 </td>
-                                <td></td>
-                            </tr>
+                                <td>Dr.WU<br>
+                                    Dr.MO<br>
+                                    Dr.YANG
+                                </td>
+                            </tr> -->
                         </tbody>
                     </table>
                 </div>
 
-                <div data-aos="flip-left" data-aos-duration="1500">
+                <div>
                     <h3 class="fs-5">【注意事項】</h3>
                     <p class="mb-1 d-flex"><i class="bi bi-stars me-1 star-icon"></i>週一～週日皆有看診（限狗貓）</p>
                     <p class="mb-1 d-flex"><i
@@ -295,10 +263,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <!-- footer -->
-    <div class="footer">
+    <footer>
         <div class="container pt-3">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 px-2 px-md-0">
                 <div class="col">
@@ -368,7 +336,7 @@
                 <p class="mb-0 py-3 text-center text-white">© 2023 Copyright - 星光動物醫院</p>
             </div>
         </div>
-    </div>
+    </footer>
 
 
 

@@ -17,31 +17,6 @@
     }
 }
 
-//科別樣式
-.service-dept a {
-    font-size: 14px;
-    color: #444;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    padding: 6px 0;
-
-    &:hover {
-        border-color: $info;
-        box-shadow: inset 0 0 0 1px $info;
-    }
-}
-
-.service-dept .active {
-    border-color: $info;
-    box-shadow: inset 0 0 0 1px $info;
-}
-
-@media (min-width:768px) {
-    .service-dept a {
-        padding: 10px 21px;
-    }
-}
-
 //醫生詳細介紹
 .doc-pic {
     width: 150px;
@@ -49,41 +24,24 @@
     object-fit: cover;
 }
 
-
-//醫生card遮罩效果
-.doc-card {
-    position: relative;
+//arror
+.arror {
+    color: $info ;
     cursor: pointer;
-    border: 1px solid $gray-300;
-    border-bottom-left-radius: $border-radius-xl;
-    border-bottom-right-radius: $border-radius-xl;
+    position: relative;
+    animation-name: arror-jump;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-direction: alternate;    
+    animation-iteration-count: infinite;
 }
 
-.mask {
-    position: absolute;
-    width: 100%;
-    height: 60%;
-    background-color: rgba($color: $dark, $alpha: 0.8);
-    opacity: 1;
-    transition: 0.6s;
-}
-
-.doc-card:hover {
-    border: 1px solid transparent;
-
-    .mask {
-        opacity: 0;
-    }
-}
-
-@media (min-width:992px) {
-    .doc-card {
-        border-bottom-left-radius: $border-radius;
-        border-top-right-radius: $border-radius-xl;
+@keyframes arror-jump {
+    0% {
+        top: 0;
     }
 
-    .mask {
-        width: 40%;
-        height: 100%;
+    100% {
+        top: 20px;
     }
 }

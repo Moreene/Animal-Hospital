@@ -1,0 +1,50 @@
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+//標題樣式
+.star-title {
+    position: relative;
+
+    &::after {
+        content: '';
+        width: 30%;
+        height: 2px;
+        background-color: $info;
+        position: absolute;
+        bottom: -20px;
+        right: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+//科別、衛教連結
+.guide-link a {
+    font-size: 14px;
+    color: #444;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 6px 0;
+
+    &:hover {
+        border-color: $info;
+        box-shadow: inset 0 0 0 1px $info;
+    }
+}
+
+.guide-link .active {
+    border-color: $info;
+    box-shadow: inset 0 0 0 1px $info;
+}
+
+@media (min-width:768px) {
+    .guide-link a {
+        padding: 10px 21px;
+    }
+}

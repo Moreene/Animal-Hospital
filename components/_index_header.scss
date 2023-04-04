@@ -1,0 +1,10 @@
+//背景樣式
+.navbar{
+    background-color: $info;
+}
+
+//超連結樣式
+.navbar .nav-link:hover{
+    background-color: $white;
+    color: $info;
+}
