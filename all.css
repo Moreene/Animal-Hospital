@@ -5798,8 +5798,7 @@ textarea.form-control-lg {
   float: left;
   width: 100%;
   margin-right: -100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -11159,6 +11158,8 @@ footer a:active {
 
 .card-img-overlay {
   opacity: 0;
+  transition-delay: 0.3s;
+  transition-duration: 0.3s;
 }
 
 .doctors .card:hover .card-img-overlay {

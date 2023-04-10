@@ -45,6 +45,8 @@
 
 .card-img-overlay {
     opacity: 0;
+    transition-delay: 0.3s;
+    transition-duration: 0.3s;
 }
 
 .doctors .card:hover {
